@@ -1,0 +1,288 @@
+/*Definição de cores*/
+:root{
+    --primary-color: #ffff;
+    --secundary-color: #171616;
+    --color-grid:#99c8eb;  
+    --color-line: #0b5d9c; 
+    --color-shadow: #bce7e8; 
+}    
+
+/*Estilizações gerais*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color:var(--secundary-color);
+}
+
+
+body{
+    min-height: 100vh;
+    background-color: var(--primary-color);
+    background-repeat: no-repeat;
+    
+}
+
+/*Parte superior do currículo*/
+
+.navbar{
+    min-width:400px;
+    width: 100%;  
+    border-radius: 4px;
+    background-color: var(--color-grid); 
+}
+
+
+/*Área lateral da barra superior com campos de contato*/
+
+.picture-profile-div{
+    position: relative;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    max-width: 100%; 
+    margin:auto 3rem; 
+    padding-top:1.8rem;
+    border-radius: 10px;  
+}
+
+.picture-profile{
+    border-radius:35% 70% 71% 29% / 32% 42% 58% 68%;
+    width: 18rem; 
+    box-shadow: 4px 4px 15px var(--color-shadow);
+}
+
+.text-side-bar-informations{
+    position: relative;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    padding-top: .5rem;
+}
+
+ h1{
+    font-size: 50px; 
+    font-weight: 700;
+    border-bottom: 3px solid var(--primary-color); 
+}
+
+.topic-information{
+    list-style: none; 
+    padding-top: 1rem;
+} 
+
+ .icon{
+    font-size: .85rem;  
+    line-height: 30px;
+    padding-left: 1rem;
+}
+
+.fa-house , .fa-phone , .fa-envelope{
+    font-size: 20px; 
+    color: var(--color-line);
+}
+
+.topic-button{
+    position: relative;
+    display: flex; 
+    list-style: none; 
+    border: none;
+    padding: .3rem; 
+     gap:10px;
+}
+
+.social-information-button{
+    width: 130px; 
+    height: 40px; 
+    margin: .9rem auto; 
+    background-color: var(--primary-color);  
+    border: none;
+    border-radius: 5px; color: var(--secundary-color); 
+    box-shadow: 3px 2px 2px var(--color-shadow); 
+    
+}
+
+.fa-github{
+    text-align: center;
+    font-size: 25px; 
+    padding-top: 5px;
+    padding-right: .2rem;
+    color:var(--secundary-color); 
+}
+
+.fa-linkedin{
+    text-align: center;
+    font-size: 25px; 
+    padding-top: 5px;
+    padding-right: .2rem;
+    color: var(--secundary-color); 
+}
+
+
+a{
+    font-size: 15px;
+}
+
+/*Sessão Principal com dados sobre mim*/
+
+.personal-resume{
+    text-align: justify;
+    hyphens:auto; 
+    min-width:400px;
+    margin-top: 5px;
+    padding: 10px; 
+    padding-top: 3rem; 
+}
+
+.sub-section-title{
+    text-align:center; 
+    font-weight: 600;
+    font-size: 20px; 
+    margin-top: 2rem; 
+    border-bottom: 4px solid var(--color-line);
+    padding: 10px;
+}
+
+
+.text{
+    margin: 10px 4rem;
+}
+
+.section-sub-topic{
+    padding-top: 1.8rem
+}
+
+
+strong{
+    line-height: 2rem;
+}
+
+
+.sub-topics-qualification{
+    list-style-type:square; 
+    margin: 1rem 3rem;
+}
+
+
+.topic-qualification{
+    margin: auto 2rem auto;
+    padding: 4px 8px; 
+}
+
+.projects{
+    padding-top: 1rem;
+}
+
+.sub-topics-projects, .sub-topics-skill{
+    list-style-type:square; 
+    margin: 1rem 5rem auto;
+    padding: 4px 8px;
+}
+
+.topic-project , .topic-skills{
+  padding-top: 1.8rem;
+
+}
+
+.project-button{
+    width: 130px; 
+    height: 40px; 
+    margin-top: .8rem; 
+    background-color: var(--color-grid); 
+    border: none;
+    border-radius: 5px; 
+    color: var(--secundary-color);
+    box-shadow: 3px 2px 5px var(--color-shadow);
+  
+}
+
+.skills{
+    padding-top: 1rem;
+}
+
+
+/*responsividade - mobile first*/
+
+@media screen and (min-width: 500px ) {
+   span{
+       font-size: 18px;
+       padding-left: .2rem;
+   }
+}
+
+
+@media screen and (min-width: 600px ) {
+  
+   .picture-profile-div{
+       padding-bottom: 12px;
+   }   
+  
+  .side-bar-informations{
+   padding-top: 20px;
+
+  }
+  .button-information{
+   padding: 1rem;
+  } 
+     
+}
+
+
+@media screen and (min-width: 820px ){
+   
+   body{
+       background-color: var(--secundary-color);
+   }
+
+   .contener{
+       max-width: 820px;
+       width: 80%;
+       margin: 0 auto ;
+       background-color: var(--primary-color);
+   }
+  
+   .text{
+       font-size: 18px;
+   }
+  
+} 
+
+@media screen and (min-width: 876px ){
+.navbar{
+   display: flex;
+   flex-direction: row;
+  justify-content: space-around;
+   }
+
+  .projects{
+   padding-bottom: 80px;
+  } 
+
+}   
+
+ 
+@media screen and (min-width: 1000px){
+    
+   .sub-itens{
+       display: flex;
+   }
+
+
+   .skills {
+       margin-top: .8rem;
+       width: 130%;
+   }
+
+   button{
+       font-size: 12px;
+   
+   }
+   
+}
+
+
+
+
