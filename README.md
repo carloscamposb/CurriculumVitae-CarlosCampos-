@@ -1,4 +1,4 @@
-# Olá pessoal !
+# Olá pessoal! 👦🏻💬
 
 📢 **Currículo desenvolvido com HTML e CSS**
 
